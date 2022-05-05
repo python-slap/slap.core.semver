@@ -21,6 +21,7 @@ Repository = "https://github.com/python-slap/slap.core.semver"
 
 [tool.poetry.dependencies]
 python = "^3.6"
+packaging = "^21.3"
 
 [tool.poetry.dev-dependencies]
 mypy = "*"
