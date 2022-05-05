@@ -63,7 +63,7 @@ class AnyVersionSelector(VersionSelector):
 
 
 class PlaceholderVersionSelector(VersionSelector):
-    def __init__(self, epoch: int | None, version: str) -> None:
+    def __init__(self, epoch: Optional[int], version: str) -> None:
         try:
             parts = tuple(
                 "x" if part == "x" else int(part) for part in version.split(".")
